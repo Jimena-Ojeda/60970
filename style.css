@@ -309,7 +309,7 @@ body {
 
 .card {
     background-color: #48c4a7;
-    height: 200px;
+    min-height: 200px;
     border-radius: 5px;
     display: flex;
     align-items: center;
