@@ -303,15 +303,16 @@ body {
 
 .cards-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: center;
     gap: 20px;
 }
 
 .card {
     background-color: #48c4a7;
     min-height: 200px;
-    border-radius: 5px;
-    display: flex;
+    position: relative;
+    border-radius: 10px;
+    display: grid;
     align-items: center;
     justify-content: center;
     color: white;
