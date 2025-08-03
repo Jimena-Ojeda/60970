@@ -100,7 +100,7 @@ p + p {
   background-position: center;
   background-repeat: no-repeat;
   padding: 5rem 1rem;
-  color: white; /* adjust for contrast */
+  color: rgb(255, 245, 245); /* adjust for contrast */
   text-align: center;
 }
 
@@ -144,7 +144,7 @@ p + p {
 .card h2 {
     font-size: 1.2rem;
     font-style: italic;
-    color: #1a4c7c;
+    color: #0d5750;
 }
 
 /* === Footer === */
