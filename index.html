@@ -9,56 +9,58 @@
 
 
 <!-- The content below in the body tag is the visible content on the page -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  });
+</script>
 <body>
     <header>
     <nav>
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="introduction.html">Introduction</a></li> 
-        <li><a href="approach and methodology.html">Approach and Methodology</a></li> 
-        <li><a href="intersectionality and bridging activism.html">Intersectionality and Bridging Activism</a></li>
-    </ul>
+        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li> 
+            <li><a href="approach and methodology.html">Approach and Methodology</a></li> 
+            <li><a href="intersectionality and bridging activism.html">Intersectionality and Bridging Activism</a></li>
+        </ul>
     </nav>
     </header>
     <main>
-<!-- Banner container - holds all banner content -->
-<div class="banner">
-    <!-- Text content container - positions text over background -->
-
+<section class="banner">
     <div class="banner-text">
-
-        <!-- Main heading - person's name, largest text -->
-        <h1 class="banner-name">Chicana Liberation</h1>
-
-        <!-- Subtitle - role/title, smaller italicized text -->
-        <h2 class="banner-title">The idea of “bridging activism” stands out as the book’s most innovative contribution showing how Chicanas navigated and connected multiple movements, leaving a lasting legacy of intersectional political engagement.</h2>
-
+        <h1 class="banner-name"> Chicana Liberation</h1>
+        <p class="banner-title">
+            The idea of “bridging activism” stands out as the book’s most innovative contribution showing how Chicanas navigated and connected multiple movements, leaving a lasting legacy of intersectional political engagement.
+        </p>
     </div>
-</div>
-</main>
-
- 
-<p>Chávez’s Chicana Liberation recovers the overlooked voices of Chicana activists in Los Angeles, showing how they built a unique “bridging activism” that navigated between the Chicano movement, feminism, and broader social justice struggles.</p>
-
+</section>
+<section class="intro-text container"></section>
+    <p>Chávez’s Chicana Liberation recovers the overlooked voices of Chicana activists in Los Angeles, showing how they built a unique “bridging activism” that navigated between the Chicano movement, feminism, and broader social justice struggles.</p>
+</section>
  <section class="cards-container">
         <div class="card"> 
-            <img src="images/liberation.jpeg"width=100% alt="Chicana Liberation book written by Marisela Chavez">
+            <img src="images/liberation.jpeg" alt="Chicana Liberation book written by Marisela Chavez">
             <h2>Introduction</h2>
             <p> The book is based on Post–World War II to early 1980s Los Angeles. It focuses on recovering the voices of Chicana activists historically overshadowed by male-dominated narratives. </p>
         </div> 
         <div class="card">
-            <img src="images/images2.jpeg"width=100% alt="Chicanos protesting for rights">
+            <img src="images/images2.jpeg" alt="Chicanos protesting for rights">
             <h2>Approach and Methodology</h2>
             <p>The book uses intersectional lens of race, gender, and class. It also provides a way to humanize history by allowing women to tell their stories. </p>
         </div>
         <div class="card">
-            <img src="images/images.jpeg"width=100% alt="picture of culture">
+            <img src="images/images.jpeg" alt="picture of culture">
             <h2>Intersectionality and Bridging Activism</h2>
             <p>The book focuses on briding activism. As this concept helped with navigating Chicano, feminist, and social justice movements. It also helped bridged the gaps in the mainstream feminism’s understanding of women of color. </p>
         </div>
     </section>
-
+</main>
 
     <footer><p>Contact me: <a href="mailto:j.ojeda@tcu.edu"> j.ojeda@tcu.edu</a></p></footer>
 </body>
