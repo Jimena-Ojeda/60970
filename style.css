@@ -1,251 +1,158 @@
-/* ========== RESET & BASE ========== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* === Global Styles === */
 body {
+    color: #333;
+    background-color: #fff;
+    margin: 0;
     font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f5f5f5;
 }
-/* ========== HEADER & NAVIGATION ========== */
+
+main, .essay-text {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Paragraph styles */
+p {
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+}
+
+p + p {
+    margin-top: 1em;
+}
+
+/* === Nav Bar Styles === */
 .header {
-    background-color: #2f6a8c;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #178f88;
 }
 
-nav {
-    width:100%;
-    background-color: #159187;
-    color: white;
-    height: 10vh; 
-    display: flex; 
-    align-items: center; 
-    padding-left: 10%;
-    box-sizing: border-box; 
-}
-nav ul {
-    list-style-type: none;
+.main-nav {
     display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-nav li{
-    font-size: 1em;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-nav a:hover {
-    color: darkgray;
-    text-decoration:underline;
-}
-nav a:visited {
-    color: white;
-    text-decoration: none;
-}
-/* ========== HERO SECTION ========== */
-.hero {
-    background-color:#14a0bb;
-    height: auto;
-    padding: 40px 10%;
-    border-radius: 6px;
-    color: white;
-    text-align: center;
-    font-weight: bold; 
-}
-.banner-text h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
-}
-.banner-text p {
-    font-size: 1.5em;
-    font-style: italic;
-}
-/* ========== MAIN TYPOGRAPHY ========== */
-h1, h2 {
-    color: #2884a2;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 1rem;
-}
-h2 {
-    font-size: 1.8em;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 4px solid #9fa5c7;
-    padding-bottom: 1rem;
-    font-style: italic;
-}
-p, li {
-    font-size: 1.3em;
-    line-height: 2em;
-}
-/* ========== CARD SECTION ========== */
-.cards-container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin: 2em 0;
-}
-.card {
-    background-color: #48c4a7;
-    border-radius: 20px;
-    padding: 1.5em;
-    color: white;
-    text-align: center;
-}
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin-bottom: 1em;
-}
-/* ========== FOOTER ========== */
-footer {
-    width: 100%;
-    background-color: #159187;
-    color: white;
-    height: 10vh;
-    padding: 1rem 10%;
-    box-sizing: border-box;
-    margin-top: 2em;
-}
-footer a {
-    color: white;
-    text-decoration: none;
-}
-footer a:hover {
-    color: darkgray;
-    text-decoration: underline;
-}
-
-/* ========== BANNER BACKGROUND ========== */
-.banner {
-    width: 100%;
-    height: 80vh;
-    background-image: 
-        linear-gradient(to right, transparent 0%, transparent 30%,      rgba(154, 128, 128, 0.9) 90%,rgba(154, 128, 128, 0.9) 90%), url('images/images3.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    background-color: #178f88;
 }
-.banner-text {
-    text-align: right;
-    margin-right: 8%;
-    padding: 30px;
-}
-.banner-name {
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 5.0em;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.banner-title {
-    color: #f0f0f0;
-    font-size: 1.5em;
-    font-style: italic;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-/* ========== IMAGES AND CAPTIONS ========== */
-.analysis-image {
-    width: 100%;
-    max-width: 800px;
-    margin: 1rem 0;
-    border: 2px solid #7699df;
-    border-radius: 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-.image-caption {
-    font-style: italic;
-    color: #1e459a;
-    text-align: center;
-    margin-top: 0.5rem;
-    font-size: 0.9em;
-}
-main{
 
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-
-} 
-/* ========== LINKS ========== */
-a {
-    color: #27247a;
-    transition: color 0.3s ease;
-}
-a:hover {
-    color: #6c74e1;
-    text-decoration: underline;
-}
-a:focus {
-    outline: 2px solid #40349c;
-    outline-offset: 2px;
-}
-/* ========== MEDIA QUERIES ========== */
-@media (min-width: 768px) {
-    .card-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .card {
-        flex: 1;
-        max-width: 30%;
-    }
-    nav ul {
-        flex-direction: row;
-    }
-    nav li {
-        margin-bottom: 0%;
-    }
-}
-/* ========== HAMBURGER MENU ========== */
-.hamburger {
-    display: none;
-    font-size: 2em;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
 .nav-links {
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-/* ========== MEDIA QUERIES ========== */
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+/* Hamburger for mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Mobile nav toggle */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #159187;
-        position: absolute;
-        top: 10vh;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
+    .hamburger {
+        display: flex;
     }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background-color: #178f88;
+    }
+
     .nav-links.active {
         display: flex;
     }
-    .hamburger {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-    nav ul {
-        position: relative;
+
+    .nav-links li {
+        padding: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
     }
 }
+
+/* === Banner Section === */
+.banner {
+  background-image: url("images/images3.jpeg"); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem 1rem;
+  color: white; /* adjust for contrast */
+  text-align: center;
+}
+
+.banner-name {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.banner-title {
+    font-size: 1.2rem;
+    max-width: 65ch;
+    margin: auto;
+}
+
+/* === Cards Section === */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #3cbcad;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #1a4c7c;
+}
+
+/* === Footer === */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+

@@ -12,16 +12,19 @@
 
 <body>
 
-    <nav>
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="introduction.html">Introduction</a></li> 
-        <li><a href="approach and methodology.html">Approach and Methodology</a></li> 
-        <li><a href="intersectionality and bridging activism.html">Intersectionality and Bridging Activism</a></li>
-    </ul>
-    </nav>
-
-
+<nav class="main-nav" aria-label="Main navigation">
+  <div class="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="introduction.html">Introduction</a></li> 
+    <li><a href="approach and methodology.html">Approach and Methodology</a></li> 
+    <li><a href="intersectionality and bridging activism.html">Intersectionality & Bridging</a></li>
+  </ul>
+</nav>
 
     <main>
     <h1>Intersectionality and Bridging Activism</h1>
@@ -41,5 +44,15 @@
 
     </main>
     <footer><p>Contact me: <a href="mailto:j.ojeda@tcu.edu"> j.ojeda@tcu.edu</a></p></footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
